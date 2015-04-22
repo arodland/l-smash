@@ -1503,7 +1503,7 @@ static int hevc_importer_probe( importer_t *importer )
     else if( first_sc_head_pos == NALU_IO_ERROR )
     {
         err = LSMASH_ERR_IO;
-        goto fail
+        goto fail;
     }
     /* OK. It seems the stream has a long start code of HEVC. */
     importer->info = hevc_imp;
