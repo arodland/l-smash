@@ -842,7 +842,7 @@ static int h264_importer_probe( importer_t *importer )
         err = LSMASH_ERR_INVALID_DATA;
         goto fail;
     }
-    else if( first_sc_head_pos == NALU_IO_ERRPR )
+    else if( first_sc_head_pos == NALU_IO_ERROR )
     {
         err = LSMASH_ERR_IO;
         goto fail;
